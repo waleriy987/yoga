@@ -1,0 +1,73 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@font-face {
+  font-family: 'Open-Sans-Semibold';
+  src: url("../fonts/Open-Sans-Semibold/OpenSans-Semibold.ttf");
+}
+
+a{
+	text-decoration: none;
+}
+
+.header-container{
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+	width: 100%;
+
+	.header{
+		background-color: #FFF;
+		max-width: 800px;
+		width: 100%;
+		margin:0 auto;
+		padding: 15px 0 15px 0;
+
+		&:after,
+		&:before{
+			clear: both;
+			display: table;
+			content: "";
+		}
+		
+		&__left-menu__list-item,
+		&__right-menu__list-item{
+			margin:0 10px 0 10px;
+			padding: 0 0 0 0;
+			display: inline-block;
+			vertical-align: middle;
+
+			a{
+				font-size: 14px;
+				line-height: 16px;
+				color: #555;
+				font-family: 'Open-Sans-Semibold';
+
+				&:hover{
+					color: #5363db;
+					text-decoration: underline;
+				}
+			}
+		}
+
+		&__right-menu{
+			float: right;
+			margin: 25px 0 0 0;
+		}
+
+		&__left-menu{
+			float: left;
+			margin: 25px 0 0 0;
+		}
+
+		&__logo{
+			margin: 0 auto;
+			width: 70px;
+			height: 70px;
+		}
+	}
+
+}
