@@ -151,10 +151,10 @@ a {
 }
 /* line 93, ../sass/screen.scss */
 .banner-container .banner {
-  max-width: 1170px;
+  max-width: 930px;
   width: 100%;
   margin: 0 auto;
-  padding: 100px 55px 100px 240px;
+  padding: 100px 0 100px 0;
 }
 /* line 99, ../sass/screen.scss */
 .banner-container .banner:after, .banner-container .banner:before {
@@ -164,30 +164,83 @@ a {
 }
 /* line 106, ../sass/screen.scss */
 .banner-container .banner__form {
-  max-width: 300px;
-  width: 100%;
+  width: 240px;
   margin: 0 0 0 0;
   float: left;
   padding: 35px;
   background-color: #FFF;
   border-radius: 10px;
-  min-height: 390px;
+  min-height: 320px;
 }
-/* line 117, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
+.banner-container .banner__form h3 {
+  font-size: 26px;
+  line-height: 28px;
+  color: #5363db;
+  font-family: 'Open-Sans-Semibold';
+  margin: 0 0 10px 7px;
+}
+/* line 121, ../sass/screen.scss */
+.banner-container .banner__form input {
+  width: 220px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 5px 5px 5px 15px;
+  margin: 0 0 10px 0;
+  border: none;
+  font-size: 14px;
+}
+/* line 131, ../sass/screen.scss */
+.banner-container .banner__form .form_submit {
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  background-color: #5b6ceb;
+  text-align: center;
+  float: right;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 0;
+}
+/* line 142, ../sass/screen.scss */
+.banner-container .banner__form .select2-container {
+  width: 240px !important;
+}
+/* line 144, ../sass/screen.scss */
+.banner-container .banner__form .select2-container .select2-selection--single {
+  height: 50px !important;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: none;
+}
+/* line 149, ../sass/screen.scss */
+.banner-container .banner__form .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-top: 10px;
+  height: 40px;
+  padding-left: 15px;
+}
+/* line 154, ../sass/screen.scss */
+.banner-container .banner__form .select2-container .select2-selection--single .select2-selection__arrow {
+  top: 10px;
+  right: 10px;
+}
+/* line 165, ../sass/screen.scss */
 .banner-container .banner__title {
   float: right;
-  width: 60%;
+  width: 52%;
 }
-/* line 120, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .banner-container .banner__title h1 {
   margin: 50px 0 0 0;
   padding: 0 0 0 0;
   font-size: 48px;
-  line-height: 50px;
+  line-height: 59px;
   color: #fff;
   font-family: 'Open-Sans-Bold';
+  text-transform: uppercase;
 }
-/* line 128, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .banner-container .banner__title p {
   margin: 40px 0 0 0;
   padding: 0 0 0 0;
@@ -195,4 +248,219 @@ a {
   line-height: 42px;
   color: #fff;
   font-family: 'Free-Style-Script';
+}
+
+/* line 189, ../sass/screen.scss */
+.select2-dropdown {
+  border: none !important;
+}
+/* line 191, ../sass/screen.scss */
+.select2-dropdown .select2-results__option--highlighted {
+  background: #8a8a8a !important;
+  color: black !important;
+}
+
+/* line 197, ../sass/screen.scss */
+.feature-program-container {
+  background-color: #FFF;
+}
+/* line 199, ../sass/screen.scss */
+.feature-program-container .feature {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 125px 0 0 0;
+}
+/* line 204, ../sass/screen.scss */
+.feature-program-container .feature h3 {
+  font-size: 30px;
+  line-height: 32px;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 0;
+  color: #5b6ceb;
+  font-family: 'Open-Sans-Bold';
+  text-align: center;
+}
+/* line 213, ../sass/screen.scss */
+.feature-program-container .feature h4 {
+  font-size: 41px;
+  line-height: 43px;
+  margin: 0 0 75px 0;
+  padding: 0 0 0 0;
+  color: #777;
+  font-family: 'Free-Style-Script';
+  text-align: center;
+}
+/* line 229, ../sass/screen.scss */
+.feature-program-container .feature__box__list__item {
+  width: 48%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 237, ../sass/screen.scss */
+.feature-program-container .feature__box__list__item a {
+  display: block;
+}
+/* line 241, ../sass/screen.scss */
+.feature-program-container .feature__box__list__item:hover {
+  box-shadow: 2px 2px 41px 4px #999;
+}
+/* line 245, ../sass/screen.scss */
+.feature-program-container .feature__box__list__item:nth-child(2n) {
+  margin: 0 0 0 0;
+}
+/* line 249, ../sass/screen.scss */
+.feature-program-container .feature__item-img-box {
+  width: 48%;
+  float: left;
+}
+/* line 253, ../sass/screen.scss */
+.feature-program-container .feature__item-info-box {
+  padding: 15px 15px 15px 0px;
+  width: 45%;
+  float: right;
+}
+/* line 258, ../sass/screen.scss */
+.feature-program-container .feature__item-info-box strong {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 22px;
+  font-family: 'Open-Sans-Bold';
+  color: #777;
+  display: block;
+  margin: 0 0 25px 0;
+}
+/* line 267, ../sass/screen.scss */
+.feature-program-container .feature__item-info-box p {
+  font-size: 14px;
+  line-height: 23px;
+  color: #555;
+  font-family: 'Open-Sans';
+  margin: 0 0 0 0;
+}
+/* line 274, ../sass/screen.scss */
+.feature-program-container .feature__item-info-box span {
+  font-size: 14px;
+  line-height: 16px;
+  color: #999;
+  font-weight: bold;
+  font-family: 'Open-Sans';
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+/* line 287, ../sass/screen.scss */
+.greed_box-container {
+  margin: 50px 0 50px 0;
+}
+/* line 292, ../sass/screen.scss */
+.greed_box-container .greed_box__list {
+  width: 100%;
+  font-size: 0;
+}
+/* line 297, ../sass/screen.scss */
+.greed_box-container .greed_box__item {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+/* line 302, ../sass/screen.scss */
+.greed_box-container .greed_box__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 307, ../sass/screen.scss */
+.greed_box-container .greed_box__item a {
+  display: block;
+}
+/* line 312, ../sass/screen.scss */
+.greed_box-container .greed_box__item:hover .greed_box__item-info {
+  display: block;
+  cursor: pointer;
+}
+/* line 318, ../sass/screen.scss */
+.greed_box-container .greed_box__item-info {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(123, 136, 238, 0.5) url(../images/glyphicons-28-search.png) center no-repeat;
+}
+
+/* line 331, ../sass/screen.scss */
+.about_us-container .about_us {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0;
+}
+/* line 337, ../sass/screen.scss */
+.about_us-container .about_us__slider, .about_us-container .about_us__content {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+/* line 344, ../sass/screen.scss */
+.about_us-container .about_us__content {
+  margin: 40px 0 0 0;
+}
+/* line 347, ../sass/screen.scss */
+.about_us-container .about_us__content h3 {
+  font-size: 30px;
+  line-height: 32px;
+  color: #5b6ceb;
+  font-family: 'Open-Sans-Bold';
+  margin: 0 0 15px 0;
+}
+/* line 354, ../sass/screen.scss */
+.about_us-container .about_us__content p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+  font-family: 'Open-Sans';
+  margin: 0 0 0 0;
+  padding: 0 130px 0 0;
+}
+/* line 365, ../sass/screen.scss */
+.about_us-container .about_us__slider img {
+  width: 100%;
+}
+/* line 368, ../sass/screen.scss */
+.about_us-container .about_us__slider .slick-list {
+  border-radius: 15px !important;
+  box-shadow: 2px 2px 13px 2px #777;
+}
+
+/* line 377, ../sass/screen.scss */
+.type_balance-container {
+  widows: 100%;
+  margin: 0 0 0 0;
+  padding: 50px 0;
+  background: url(../images/bg_center_box.png) center no-repeat;
+  background-size: cover;
+}
+/* line 383, ../sass/screen.scss */
+.type_balance-container .type_balance {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 388, ../sass/screen.scss */
+.type_balance-container .type_balance__list {
+  margin: 0 0 0 0;
+}
+/* line 391, ../sass/screen.scss */
+.type_balance-container .type_balance__item {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  margin: 0 0 25px 0;
 }
