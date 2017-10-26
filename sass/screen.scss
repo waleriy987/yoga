@@ -25,8 +25,23 @@
   src: url("../fonts/Open-Sans/OpenSans.ttf");
 }
 
+@font-face {
+  font-family: 'Open-Sans-Italic';
+  src: url("../fonts/Open-Sans-Italic/2208.ttf");
+}
+
 a{
 	text-decoration: none;
+}
+
+.fixedHeader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	z-index: 100;
+	background-color: #FFF;
+	box-shadow: 0 0 50px 0 #ccc;
 }
 
 .header-container{
@@ -432,7 +447,7 @@ a{
 		max-width: 1170px;
 		width: 100%;
 		margin: 0 auto;
-		padding: 80px 0 0 0;
+		padding: 80px 0 150px 0;
 		&__list{
 			display: flex;
 			justify-content: space-between;
@@ -504,6 +519,24 @@ a{
 			margin: 100px 0 0 0;
 		}
 		&__slider-big{
+			.slick-dots{
+			    top: -40px !important;
+			    right: 40px !important;
+			    width: fit-content !important;
+			    transform: rotate(90deg) !important;
+			    li{
+			    	button{
+			    		&:before{
+			    			content: "" !important;
+			    		}
+			    	}
+			    	background: url(../images/ellips_grey.png) center no-repeat !important;
+			    }
+			    .slick-active{
+			    	background: url(../images/ellips_active.png) center no-repeat !important;
+			    }
+			}
+
 			.paymentBig-slide{
 				width: 100%;
 				background-color: #fff;
@@ -511,6 +544,51 @@ a{
 				padding: 20px;
 				margin: 0 0 0 0;
 				display: table;
+
+				p{
+					font-family: 'Open-Sans-Italic';
+					font-size: 14px;
+					line-height: 16px;
+					color: #555;
+					margin:0 0 25px 0;
+					padding: 0 0 0 0;
+					width: 80%;
+					position: relative;
+
+					&:after{
+						position: absolute;
+						content: "";
+						top: -30px;
+						left: -40px;
+						width: 21px;
+						height: 15px;
+						background: url(../images/lap-up.png) center no-repeat;
+						}
+
+						&:before{
+							position: absolute;
+							content: "";
+							bottom: -30px;
+							right: -40px;
+							width: 21px;
+							height: 15px;
+							background: url(../images/lap-down.png) center no-repeat;
+						}
+				}
+				span{
+					font-family: 'Open-Sans';
+					font-size: 14px;
+					line-height: 16px;
+					color: #555;
+					margin:0 0 0 0;
+				}
+				strong{
+					font-family: 'Open-Sans-Bold';
+					font-size: 16px;
+					line-height: 18px;
+					color: #5b6ceb;
+					margin:0 0 0 0;
+				}
 				.paymentBig-slide-img{
 					display: table-cell;
 					width: 20%;
@@ -537,7 +615,139 @@ a{
 			}
 		}
 		&__slider-small{
+			width: 230px !important;
+			margin: -66px 0 0 35%;
 
+			.slick-prev{
+				left: -50px !important;
+			}
+			.slick-list{
+				padding: 0 0 0 0 !important;
+			}
+
+			
+
+			.paymentSmall-slide{
+				
+				padding: 0 10px;
+				margin:0 5px 0 5px;
+				&:after,
+				&:before{
+					display: table;
+					clear: both;
+					content: "";
+				}
+				.paymentSmall-slide-img{
+					width: 35%;
+					float: left;
+					vertical-align: middle;
+				}
+				.paymentSmall-slide-info{
+					float: right;
+					width: 60%;
+					padding: 15px 0 0 0;
+					vertical-align: middle;
+					strong{
+						font-family: 'Open-Sans-Bold';
+						font-size: 14px;
+						line-height: 22px;
+						color: #555;
+					}
+					span{
+						font-family: 'Open-Sans';
+						font-size: 12px;
+						line-height: 14px;
+						color: #777;
+					}
+				}
+			}
 		}
+	}
+}
+
+.footer-container{
+	background-color: #5b6ceb;
+	.footer{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 100px 0;
+		display: table;
+		&__about{
+			display: table-cell;
+			width: 50%;
+			h2{
+				font-size: 18px;
+				line-height: 20px;
+				color: #fff;
+				font-family: 'Open-Sans-Bold';
+				margin:0 0 40px 0;
+			}
+			p{
+				font-size: 14px;
+				line-height: 23px;
+				color: #fff;
+				font-family: 'Open-Sans';
+				margin:0 0 50px 0;
+			}
+		}
+		&__about__list{
+			li{
+				display: inline-block;
+				margin:0 10px 0 0;
+				a{
+					display: block;
+				}
+			}
+		}
+		&__contact{
+			display: table-cell;
+			width: 50%;
+			h2{
+				font-size: 18px;
+				line-height: 20px;
+				color: #fff;
+				font-family: 'Open-Sans-Bold';
+				margin:0 0 40px 0;
+			}
+		}
+		&__contact__list{
+			font-size: 0;
+		}
+		&__contact__item{
+			display: inline-block;
+			vertical-align: top;
+			width: 50%;
+			margin:0 0 30px 0;
+			img{
+				float: left;
+				width: 10%;
+				margin:0 10px 0 0;
+			}
+
+			p{
+				
+				a{
+					font-size: 14px;
+					line-height: 16px;
+					color: #fff;
+					font-family: 'Open-Sans';
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.bottom-info-container{
+	background-color: #5363d8;
+	padding: 45px 0;
+	text-align: center;
+	p{
+		font-size: 16px;
+		line-height: 18px;
+		color: #b7bffc;
+		font-family: 'Open-Sans';
+		text-align: center;
 	}
 }

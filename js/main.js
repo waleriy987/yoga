@@ -12,6 +12,7 @@ $(document).ready(function () {
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  arrows: false,
+		  dots: true,
 		  fade: true,
 		  asNavFor: '.paymentSmall'
       });
@@ -20,10 +21,22 @@ $(document).ready(function () {
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  asNavFor: '.paymentBig',
-		  dots: true,
 		  centerMode: true,
 		  focusOnSelect: true
       });
+
+
+	$(window).scroll(function() {
+
+		var headerFixed = $(window).scrollTop();
+
+		if(headerFixed > 120){
+			$(".header-container").addClass("fixedHeader");
+		}else if(headerFixed < 120){
+			$(".header-container").removeClass("fixedHeader");
+		}
+		
+	});
 
 
 
