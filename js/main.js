@@ -8,6 +8,38 @@ $(document).ready(function () {
         slidesToScroll: 1
       });
 
+	$(".paymentBig").slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		  asNavFor: '.paymentSmall'
+      });
+
+	$(".paymentSmall").slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  asNavFor: '.paymentBig',
+		  dots: true,
+		  centerMode: true,
+		  focusOnSelect: true
+      });
+
+
+
+$(document).on("mouseover", ".payment_card_box__item-btn", function() {
+	$(this).parent().siblings().children().css("color", "blue");
+	$(this).css("background-color", "blue");
+});
+$(document).on("mouseout", ".payment_card_box__item-btn", function() {
+	$(this).parent().siblings().children().css("color", "#fff");
+	$(this).css("background-color", "#5b6ceb");
+});
+
+
+
+
+
 	
 });
 

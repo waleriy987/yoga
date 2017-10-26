@@ -443,7 +443,7 @@ a {
 .type_balance-container {
   widows: 100%;
   margin: 0 0 0 0;
-  padding: 50px 0;
+  padding: 80px 0;
   background: url(../images/bg_center_box.png) center no-repeat;
   background-size: cover;
 }
@@ -456,11 +456,166 @@ a {
 /* line 388, ../sass/screen.scss */
 .type_balance-container .type_balance__list {
   margin: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
-/* line 391, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 .type_balance-container .type_balance__item {
-  display: inline-block;
   width: 25%;
-  vertical-align: top;
   margin: 0 0 25px 0;
+  text-align: center;
+}
+/* line 398, ../sass/screen.scss */
+.type_balance-container .type_balance__item a {
+  display: block;
+}
+/* line 401, ../sass/screen.scss */
+.type_balance-container .type_balance__item a img {
+  text-align: center;
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+}
+/* line 407, ../sass/screen.scss */
+.type_balance-container .type_balance__item a strong {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  font-family: 'Open-Sans-Bold';
+  margin: 0 0 0 0;
+}
+/* line 415, ../sass/screen.scss */
+.type_balance-container .type_balance__item a p {
+  font-family: 'Open-Sans';
+  font-size: 16px;
+  line-height: 23px;
+  color: #fff;
+  margin: 10px 0 0 0;
+}
+
+/* line 427, ../sass/screen.scss */
+.payment_card_box-container {
+  background: #f1f1f1 url(../images/lotos.png) no-repeat;
+  background-position: 100% 100%;
+  background-size: 50%;
+}
+/* line 431, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 0 0;
+}
+/* line 436, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+/* line 441, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__item {
+  width: 372px;
+  box-shadow: 0 0 52px 0 #888;
+  border-radius: 12px;
+  background-color: #fff;
+}
+/* line 447, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__item-title {
+  background-color: #5b6ceb;
+  padding: 50px 0;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+/* line 453, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__item-title h4 {
+  font-size: 67px;
+  line-height: 70px;
+  color: #fff;
+  font-family: 'Open-Sans-Bold';
+  margin: 0 0 0 0;
+  display: inline-block;
+}
+/* line 461, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__item-title p {
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  margin: 0 0 0 0;
+  display: inline-block;
+  font-family: 'Open-Sans-Bold';
+}
+/* line 468, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__item-title p:first-child {
+  font-size: 32px;
+  line-height: 34px;
+  display: inline-block;
+  margin: 0 0 0 0;
+}
+/* line 476, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__item-body {
+  padding: 35px 0;
+  text-align: center;
+}
+/* line 483, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__body-item {
+  font-size: 18px;
+  line-height: 20px;
+  color: #555;
+  font-family: 'Open-Sans';
+  margin: 0 0 10px 0;
+}
+/* line 490, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__item-btn {
+  display: block;
+  margin: 40px auto;
+  background-color: #5b6ceb;
+  color: #fff;
+  text-align: center;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-family: 'Open-Sans-Semibold';
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+}
+/* line 503, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__slider {
+  margin: 100px 0 0 0;
+}
+/* line 507, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__slider-big .paymentBig-slide {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 0 0 0;
+  display: table;
+}
+/* line 514, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__slider-big .paymentBig-slide .paymentBig-slide-img {
+  display: table-cell;
+  width: 20%;
+  vertical-align: top;
+}
+/* line 518, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__slider-big .paymentBig-slide .paymentBig-slide-img:after, .payment_card_box-container .payment_card_box__slider-big .paymentBig-slide .paymentBig-slide-img:before {
+  clear: both;
+  display: table;
+  content: "";
+}
+/* line 525, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__slider-big .paymentBig-slide .paymentBig-slide-img hr {
+  transform: rotate(90deg);
+  margin: -62px 0 0 0;
+  float: right;
+}
+/* line 531, ../sass/screen.scss */
+.payment_card_box-container .payment_card_box__slider-big .paymentBig-slide .paymentBig-slide-info {
+  display: table-cell;
+  width: 80%;
+  vertical-align: top;
+  padding: 30px 0 0 0;
 }
